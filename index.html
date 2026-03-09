@@ -20,14 +20,23 @@
         <li>Scripts simples à vendre</li>
       </ul>
     </section>
-
-    <button id="buyBtn">Acheter un script (2€)</button>
+ <!-- Bouton PayPal -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <!-- Remplace TON_EMAIL_PAYPAL par ton email PayPal -->
+      <input type="hidden" name="business" value="kiyojurosan@gmail.com">
+      <input type="hidden" name="item_name" value="Script étudiant">
+      <input type="hidden" name="amount" value="2.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <input type="submit" value="Acheter un script (2€)">
+    </form>
+    
   </main>
 
   <footer>
     <p>&copy; 2026 - Mon Site Étudiant</p>
   </footer>
 
-  <script src="script.js"></script>
-</body>
+  </body>
+
 </html>
